@@ -1,0 +1,117 @@
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.imgx-section {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 6% 2%;
+}
+
+.imgx-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.imgx-grid:after {
+	clear: both;
+}
+
+.imgx-grid:after, .imgx-box:before {
+	content: '';
+	display: table;
+}
+
+.imgx-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.imgx-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.imgx-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.imgx-box:hover {
+	transform: scale(1.05); 
+}
+.imgx-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/ksg_games.png);
+}
+
+.imgx-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/soap.jpg);
+}
+
+.imgx-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/flower.jpg);
+}
+
+.imgx-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/feather.jpg);
+}
+
+.imgx-img-5 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/feather.jpg);
+}
+
+.imgx-img-6 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+	url(../images/feather.jpg);
+}
+
+.imgx-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	
+}
+
+.imgx-info h3 {
+	font-family: 'Roboto', cursive;
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+
+.imgx-info p {
+	font-family: 'Roboto Light', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 2;
+}
