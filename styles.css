@@ -1,13 +1,15 @@
-body,h1 {font-family: "Raleway", Arial, sans-serif}
-h1 {letter-spacing: 6px}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body,h1 {font-family: "Roboto Light", Arial, sans-serif}
+h1 {letter-spacing: 6px;
+	text-align: center;}
 .w3-row-padding img {margin-bottom: 12px}
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .imgx-section {
 	max-width: 1260px;
 	margin: 0 auto;
-	padding: 6% 2%;
+	padding: 0% 4%;
 }
 
 .imgx-grid {
@@ -35,14 +37,6 @@ h1 {letter-spacing: 6px}
 	margin: 20px;
 }
 
-
-.imgx-grid li {
-	width: 328px;
-	height: 328px;
-	display: inline-block;
-	margin: 20px;
-}
-
 .imgx-box {
 	width: 100%;
 	height: 100%;
@@ -61,33 +55,13 @@ h1 {letter-spacing: 6px}
 	transform: scale(1.05); 
 }
 .imgx-img-1 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/ksg_games.png);
+	background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.80)), /* bottom, image */
+	url('images/ksg_games.png');
 }
 
 .imgx-img-2 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/soap.jpg);
-}
-
-.imgx-img-3 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/flower.jpg);
-}
-
-.imgx-img-4 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/feather.jpg);
-}
-
-.imgx-img-5 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/feather.jpg);
-}
-
-.imgx-img-6 {
-	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-	url(../images/feather.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.20)), /* bottom, image */
+	url('images/abc.png');
 }
 
 .imgx-info {
@@ -105,6 +79,7 @@ h1 {letter-spacing: 6px}
 	margin: 0 30px;
 	padding: 100px 0 0 0;
 	line-height: 1.5;
+	text-shadow: 4px 4px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .imgx-info p {
@@ -114,4 +89,6 @@ h1 {letter-spacing: 6px}
 	margin: 0 30px;
 	font-size: 14px;
 	line-height: 2;
+	text-shadow: 4px 4px #000000;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

@@ -15,8 +15,11 @@ h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 --->
-<body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 
+<body>
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
@@ -27,60 +30,71 @@ h1 {letter-spacing: 6px}
   
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
-      <a href="#" class="w3-bar-item w3-button">About</a>
-      <a href="#" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
-      <a href="#" class="w3-bar-item w3-button">Contact</a>
+	  <a href="#about" class="w3-bar-item w3-button" 			      onclick="toggle_accordion('about')">About</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-light-grey" onclick="toggle_accordion('portfolio')">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button" 				  onclick="toggle_accordion('contact')">Contact</a>
     </div>
   </div>
 </header>
 
 <!-- Photo Grid -->
-<div class="imgx-section">
+<div id="portfolio" style="display:none" class="imgx-section">
   <ul class="imgx-grid">
+  
     <li>
       <div class="imgx-box imgx-img-1">
         <a href="https://github.com/gedasv/KSG_Games">
         <div class="imgx-info">
           <h3>KSG Games</h3>
-          <p>C++, MySQL. Desktop application with games. I made Minesweeper, the whole UI and the account system.</p>
+          <p>Desktop application with games. I made all of the UI, Minesweeper and the account system. </p>
+		  <p>C++, MySQL, VS 2017</p>
         </div></a>
       </div>
     </li>
+	
     <li>
       <div class="imgx-box imgx-img-2">
         <a href="#"> 
         <div class="imgx-info">
-          <h3>Soap</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="imgx-box imgx-img-3">
-        <a href="#">
-        <div class="imgx-info">
-          <h3>Flowers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
-        </div></a>
-      </div>
-    </li>
-    <li>
-      <div class="imgx-box imgx-img-4">
-        <a href="#">
-        <div class="imgx-info">
-          <h3>Feathers</h3>
-          <p>Nulla commodo iaculis vulputate. Nullam enim mauris, dignissim id est nec, mollis pretium nulla.</p>
+          <h3>Reserved</h3>
+          <p>Currently I'm working on ML/AI projects and should eventually post them here.</p>
         </div></a>
       </div>
     </li>
   </ul>
 </div>
+
+<!-- About section -->
+<div id="about" style="display:none" class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" >
+    <!--- <h4><b>About Me</b></h4> _-->
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>About me</h4>
+	  <p>You know, I've been a creator from the very start. </p>
+	  <p>My childhood mostly consisted of playing games day and night. However, I was never on the consumer side of the spectrum: when I see a program,
+	  I must figure out how it works. After a couple of Google searches I realized that I have no idea what I'm reading about and that felt humiliating, so my parents enrolled me in a Python2 program. </p>
+      <p>This is where my life in high school took a sharp turn. Being able to create or modify anything was extremely thrilling. Suddenly more complex terms started to make sense, and I began to work on a dozen of personal projects: from printing messages to creating Tetris. </p>
+	  <p>I'm not sure how to describe it, but the feeling of logically solving problems or creating beneficial programs simply motivates me. Although most of my work that I've done in the past has been lost on an old PC, my skills have only increased.</p>
+	  <p>So, there's still a ton to learn. Recently I've picked up Machine Learning (self-taught) and it's one of the most interesting subjects out there. It's really fascinating what you can do with huge batches of data. </p>
+	  <p>My career goal is to become a qualified ML or an AI Engineer, maybe a Data Scientist. Unfortunately, in my gymnasium we're taught only precalculus and descriptive statistics at most, so my lack of knowledge in statistics and calculus drastically slows me down.</p>
+	  <p>If you have any questions, please contact me via the <a href="#" onclick="toggle_accordion('contact')">Contact</a> section.</p>
+    </div>
+</div>
   
+
+  
+<!--- Contact --->  
+<div id="contact" style="display:none" class="w3-container w3-center w3-text-light w3-padding-32">
+  <div class="jumbotron">
+    <h1 style="background-color:#F5F5F5 ">gedas.vasiliauskas@hotmail.com</h1>
+  </div>
+  <p>That's my e-mail alright.</p>
+</div>
+ 
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+<footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-large"> 
   <a href="https://www.twitter.com/gedimv/"> <i class="fa fa-twitter w3-hover-opacity"></i> </a> 
   <a href="https://www.linkedin.com/in/gediminas-vasiliauskas-967481187/"><i class="fa fa-linkedin w3-hover-opacity"></i> </a> 
   
@@ -94,6 +108,27 @@ h1 {letter-spacing: 6px}
   --->
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+
+<script>
+function toggle_accordion(id) {
+  let x = document.getElementById(id);
+  
+  let about = document.getElementById("about");
+  let portfolio = document.getElementById("portfolio");
+  let contact = document.getElementById("contact");
+  
+  if (x.className.indexOf("w3-show") == -1) {
+	about.className = about.className.replace(" w3-show", " ");
+	portfolio.className = portfolio.className.replace(" w3-show", " ");
+	contact.className = contact.className.replace(" w3-show", " ");
+    x.className += " w3-show";
+	x.className += " w3-animate-bottom";
+  } else { 
+    x.className = x.className.replace(" w3-show", " ");
+  }
+}
+</script>
+
 
 </body>
 </html>
