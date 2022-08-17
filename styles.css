@@ -61,6 +61,11 @@ h1 {letter-spacing: 6px;
 
 .imgx-img-2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.20)), /* bottom, image */
+	url('images/python_game.png');
+}
+
+.imgx-img-default {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.20)), /* bottom, image */
 	url('images/abc.png');
 }
 
